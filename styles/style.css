@@ -1,1 +1,471 @@
 /* место для вашего кода */
+.header {
+  display: grid;
+  width: 1100px;
+  height: 293px;
+  opacity: 1;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 8px;
+  padding-right: 8px;
+  position: relative;
+}
+
+.menu {
+  flex-direction: row;
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-left: 45px;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu ul a {
+  text-decoration: none;
+}
+
+.menu_lots {
+  list-style-type: circle;
+  border-bottom: 1px solid black;
+}
+
+.menu_auction {
+  list-style-type: circle;
+  border-bottom: 1px solid black;
+}
+
+.menu_main {
+  list-style-type: none;
+}
+
+.menu_main a {
+  text-decoration: none;
+}
+
+.logo-black {
+  position: absolute;
+  width: 148px;
+  height: 105px;
+  left: calc(50% - 148px/2 + 2px);
+  top: 92px;
+}
+
+.address {
+  display: flex;
+  justify-self: end;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 240px;
+  height: 98px;
+  top: 95px;
+  left: 810px;
+  opacity: 1;
+  border-width: 1px;
+  font-style: normal;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  position: absolute;
+  white-space: pre-line; 
+}
+
+.address a {
+  text-decoration: none;
+}
+
+.mail {
+  border-bottom: 1px solid black;
+}
+
+.number {
+  border-bottom: 1px solid black;
+}
+
+.cover {
+  opacity: 1;
+  position: relative;
+}
+
+.cover__background {
+  height: 757px;
+  width: 1100px;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.ono {
+  position: absolute;
+  width: 286px;
+  min-height: 115px;
+  top: 165px;
+  left: 50px;
+  opacity: 1;
+  z-index: 1;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: bold;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+  letter-spacing: 30%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.tebe {
+  position: absolute;
+  width: 339px;
+  min-height: 115px;
+  top: 300px;
+  left: 380.5px;
+  opacity: 1;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: bold;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+  letter-spacing: 30%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.nado {
+  position: absolute;
+  width: 387px;
+  min-height: 115px;
+  top: 435px;
+  left: 663px;
+  opacity: 1;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 100px;
+  line-height: 114.99999999999999%;
+  letter-spacing: 30%;
+  text-align: right;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 0;
+}
+
+.description {
+  z-index: 1;
+}
+
+.description__text {
+  position: absolute;
+  width: 637px;
+  height: 28px;
+  top: 668px;
+  left: 50px;
+  opacity: 1;
+  font-family: 'Raleway';
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  z-index: 1;
+  color: #FFFFFF;
+  word-spacing: 18px;
+}
+
+.button {
+  position: absolute;
+  box-sizing: border-box;
+  min-width: 256px;
+  min-height: 51px;
+  top: 656px;
+  left: 794px;
+  opacity: 1;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  z-index: 1;
+  border-style: solid;
+  padding: 10px 20px;
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+
+.lots {
+  margin-top: 180px;
+}
+
+.lots__heading {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  margin-left: 65px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 596px;
+  width: 340px;
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.lots__card-list {       
+  list-style: none;
+  display: flex;
+}
+
+.lots__card-list-item {
+  min-width: 334px;
+  list-style: none;
+}
+
+.card-link {
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.card_type_film {
+  background-image: url('../images/card-lot-01.jpg');
+}
+
+.card__title {
+  display: flex;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  text-underline-offset: 4px;
+  color: #FFFFFF;
+  z-index: 1;
+  text-align: flex-start;
+  padding-top: 30px;
+  margin-left: 0;
+  padding-left: 15px;
+  white-space: pre-line; 
+}
+
+.card__text {
+  flex-direction: column;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: 'Regular';
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  padding: 40px 40px 40px 0px;
+  z-index: 1;
+  flex: 1;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  white-space: pre-line;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  inset: 0;
+}
+
+.card_type_book {
+  background-image: url('../images/card-lot-02.jpg');
+}
+
+.card_type_picture {
+  background-image: url('../images/card-lot-03.jpg');
+}
+
+.lots__look-more-link {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: 'Regular';
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding: 32px 0px 0px 64px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 1px; 
+}
+
+
+.about {
+  margin-top: 155px;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 25px;
+}
+
+.about__logo {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center; 
+}
+
+.about__logo-image {
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin-top: 50px;
+}
+
+.about__title {
+  width: 291px;
+  height: 47px;
+  margin-top: 105px;
+  margin-left: 37px;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+}
+
+.about__text {
+  font-family: 'Raleway';
+  font-weight: 400px;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  margin-top: 70px;
+  margin-left: 38px;
+  white-space: pre-line;
+}
+
+.footer {
+  display: grid;
+  margin-top: 157px;
+  grid-template-columns: 1fr min-content 1fr;
+  position: relative;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.address__footer {
+  display: flex;
+  justify-self: start;
+  align-self: start;
+  flex-direction: column;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24.3px;
+  align-items: flex-start;
+  max-width: 240px;
+  margin-left: 50px;
+}
+
+.address__footer a {
+  text-decoration: none; 
+}
+
+.footer__menu {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-decoration: none;
+}
+
+
+.menu_lots__footer  {
+  white-space: nowrap;
+}
+
+.menu_auction__footer {
+  white-space: nowrap;
+}
+
+.footer__social-list {
+  list-style: none;
+  display: flex;
+  justify-self: end;
+  margin-bottom: 45px;
+}
+
+.footer__social-list li {
+  display: inline-block;
+  margin-right: 48px;
+}
+
+.youtube {
+  width: 48px;
+  height: 48px;
+}
+
+.vk {
+  width: 48px;
+  height: 48px;
+}
+
+.pint {
+  width: 48px;
+  height: 48px;
+}
