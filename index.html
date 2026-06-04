@@ -13,9 +13,9 @@
     <header class="header">
       <nav class="menu">
         <ul>
-          <li class="menu_main"><a href="#">главная</a></li>
-          <li class="menu_lots"><a href="#">посмотреть лоты</a></li>
-          <li class="menu_auction"><a href="#">об аукционе</a></li>
+          <li class="header__links-list-item header__links-list-item_no-bullit"><a href="#">главная</a></li>
+          <li class="header__links-list-item"><a href="#">посмотреть лоты</a></li>
+          <li class="header__links-list-item"><a href="#">об аукционе</a></li>
         </ul>
       </nav>
       <a>
@@ -30,12 +30,14 @@
     </header>
     <main>
       <div class="cover">
-        <img class="cover__background" src="./images/cover.jpg">
-        <span class="ono">ОНО</span>
-        <span class="tebe">ТЕБЕ</span>
-        <span class="nado">НАДО</span>
+        <!-- <img class="cover__background" src="./images/cover.jpg"> -->
+        <h1>
+          <span class="cover__title-text">оно</span>
+          <span class="cover__title-text_align_center">тебе</span>
+          <span class="cover__title-text_align_right">надо</span>
+        </h1>
         <div class="description">
-          <span class="description__text">АУКЦИОН ВЕЩЕЙ, В КОТОРЫЕ НИКТО НЕ ВЕРИЛ</span>
+          <span class="description__text">аукцион вещей, в которые никто не верил</span>
           <button class="button">СДЕЛАТЬ СТАВКУ</button>
         </div>
         <div class="overlay"></div>
@@ -43,7 +45,7 @@
 
 
       <section class="lots">
-        <h1 class="lots__heading">ЛОТЫ</h1>
+        <h2 class="lots__heading">ЛОТЫ</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link" href="">
@@ -63,7 +65,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <a class="card-link" href="">
+            <a class="card-link" href="#0">
               <article class="card card_type_book">
                 <h3 class="card__title">Книга, где описан 
                   один скучный день 
@@ -90,7 +92,7 @@
           </li>
 
           <li class="lots__card-list-item">
-            <a class="card-link" href="">
+            <a class="card-link" href="#0">
               <article class="card card_type_picture">
                 <h3 class="card__title">Картина, которую повторит даже 5-летний сын 
                   маминой подруги</h3>
@@ -110,7 +112,7 @@
             </a>
           </li>
         </ul>
-        <a class="lots__look-more-link" href="">посмотреть больше</a>
+        <a class="lots__look-more-link" href="#0">посмотреть больше</a>
       </section>
 
       <section class="about">
@@ -138,16 +140,16 @@
     </main>
 
     <footer class="footer">
-      <address class="address__footer">
+      <address class="address">
         <a href="tel:+99995555555" class="number">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge" class="mail">info@sobaka.ge</a>
         <span class="street">наб. Принсенграхт 263-265. Амстердам</span>
       </address>
       <nav class="footer__menu">
         <ul class="footer__menu-list">
-          <li class="menu_main"><a href="#">главная</a></li>
-          <li class="menu_lots__footer"><a href="#">посмотреть лоты</a></li>
-          <li class="menu_auction__footer"><a href="#">об аукционе</a></li>
+          <li class="footer__menu-item"><a href="#">главная</a></li>
+          <li class="footer__menu-item"><a href="#">посмотреть лоты</a></li>
+          <li class="footer__menu-item"><a href="#">об аукционе</a></li>
         </ul>
       </nav>
       <ul class="footer__social-list">
